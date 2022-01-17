@@ -200,6 +200,7 @@ header {
   font-size: 11px;
   font-weight: 300;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .title {
@@ -210,4 +211,91 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+
+.subtitle {
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  text-align: center;
+}
+
+.mobileApp {
+  min-height: 864px;
+  padding: 48px 0 79px;
+  background: url("../img/bg/mobileApp_bg.jpg") center center/cover no-repeat;
+}
+
+.mobileApp .row {
+  margin-top: 32px;
+}
+
+.mobileApp_item {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+
+.mobileApp_item_1 {
+  background: url("../img/icons/mobile-app_1.jpg") center center/cover no-repeat;
+}
+
+.mobileApp_item_2 {
+  background: url("../img/icons/mobile-app_2.jpg") center center/cover no-repeat;
+}
+
+.mobileApp_item_3 {
+  background: url("../img/icons/mobile-app_3.jpg") center center/cover no-repeat;
+}
+
+.mobileApp_item_4 {
+  background: url("../img/icons/mobile-app_4.jpg") center center/cover no-repeat;
+}
+
+.mobileApp_item_5 {
+  background: url("../img/icons/mobile-app_5.jpg") center center/cover no-repeat;
+}
+
+.mobileApp_item_6 {
+  background: url("../img/icons/mobile-app_6.jpg") center center/cover no-repeat;
+}
+
+.mobileApp_item_subtitle {
+  padding-top: 90px;
+  color: #ffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mobileApp_item_black-round {
+  position: absolute;
+  bottom: 35px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: black;
+  width: 26px;
+  height: 26px;
+  margin: 0 auto;
+}
+
+.mobileApp_item_plus {
+  background: #1eacc7;
+  width: 2px;
+  height: 14px;
+  position: relative;
+  left: 12px;
+  top: 6px;
+}
+
+.mobileApp_item_plus:after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: #1eacc7;
+  position: absolute;
+  left: -6px;
+  top: 6px;
 }

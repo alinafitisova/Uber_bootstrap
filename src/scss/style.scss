@@ -165,7 +165,9 @@ header {
     font-size: 11px;
     font-weight: 300;
     text-transform: uppercase;
+    text-align: center;
 }
+
 
 .title {
     margin-bottom: 0;
@@ -175,4 +177,80 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+}
+.subtitle {
+    margin-top: 19px;
+    color: #222222;
+    font-size: 17px;
+    text-align: center;
+}
+.mobileApp {
+    min-height: 864px;
+    padding: 48px 0 79px;
+    background: url('../img/bg/mobileApp_bg.jpg') center center/cover no-repeat;
+    .row {
+        margin-top: 32px;
+    }
+    &_item {
+        position: relative;
+        width: 320px;
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 19px;
+    
+        &_1 {
+            background: url('../img/icons/mobile-app_1.jpg') center center/cover no-repeat;
+        }
+        &_2 {
+            background: url('../img/icons/mobile-app_2.jpg') center center/cover no-repeat;
+        }
+        &_3 {
+            background: url('../img/icons/mobile-app_3.jpg') center center/cover no-repeat;
+        }
+        &_4 {
+            background: url('../img/icons/mobile-app_4.jpg') center center/cover no-repeat;
+        }
+        &_5 {
+            background: url('../img/icons/mobile-app_5.jpg') center center/cover no-repeat;
+        }
+        &_6 {
+            background: url('../img/icons/mobile-app_6.jpg') center center/cover no-repeat;
+        }
+        &_subtitle {
+            padding-top: 90px;
+            color: #ffff;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+    }
+    &_item_black-round {
+        position: absolute;
+        bottom: 35px;
+        // left: 147px;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        width: 26px;
+        height: 26px;
+        margin: 0 auto;
+        
+    }
+    &_item_plus {
+        background: rgb(30, 172, 199);
+        width: 2px;
+        height: 14px;
+        position: relative; 
+        left: 12px;
+        top: 6px;
+        &:after {
+            content: "";
+            width: 14px;
+            height: 2px;
+            background: rgb(30, 172, 199);
+            position: absolute; 
+            left: -6px;
+            top: 6px;
+        }
+    } 
 }
