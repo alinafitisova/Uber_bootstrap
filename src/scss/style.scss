@@ -1,3 +1,5 @@
+@import "_var-mixins.scss";
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -135,15 +137,21 @@ header {
         margin-right: 26px;
         width: 113px;
         height: 113px;
-        background-color: #1eacc7;
+        background-color: $primaryColor;
         border-radius: 100%;
     }
     &_descr {
         width: 343px;
     }
+    &_label {
+        @include label(#fff, #000);
+    }
+    &_title {
+        @include title(#000);
+    }
     &_subtitle{
         line-height: 21px;
-        color: #1eacc7;
+        color: $primaryColor;
         font-size: 17px;
         font-weight: 400;
     }
@@ -155,46 +163,27 @@ header {
     }
 }
 
-.label {
-    margin: 0 auto;
-    height: 24px;
-    width: 112px;
-    padding: 5px 12px;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-
-.title {
-    margin-bottom: 0;
-    margin-top: 38px;
-    color: #222222;
-    font-size: 38px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-}
-.subtitle {
-    margin-top: 19px;
-    color: #222222;
-    font-size: 17px;
-    text-align: center;
-}
 .mobileApp {
+    position: relative;
     min-height: 864px;
     padding: 48px 0 79px;
     background: url('../img/bg/mobileApp_bg.jpg') center center/cover no-repeat;
     .row {
         margin-top: 32px;
     }
+    &_subtitle {
+        @include subtitle(#000);
+    }
+    &_title {
+        @include title(#000);
+    }
+    &_label {
+        @include label(#fff, #000);
+    }
     &_item {
         position: relative;
         width: 320px;
-        height: 200px;
+        height: 280px;
         margin: 0 auto;
         margin-bottom: 19px;
     
@@ -227,17 +216,18 @@ header {
     &_item_black-round {
         position: absolute;
         bottom: 35px;
-        // left: 147px;
-        transform: translateX(-50%);
+        left: 147px;
+        // transform: translateX(-50%);
         border-radius: 50%;
         background-color: rgb(0, 0, 0);
         width: 26px;
         height: 26px;
         margin: 0 auto;
+        cursor: pointer;
         
     }
     &_item_plus {
-        background: rgb(30, 172, 199);
+        background: $primaryColor;
         width: 2px;
         height: 14px;
         position: relative; 
@@ -247,10 +237,82 @@ header {
             content: "";
             width: 14px;
             height: 2px;
-            background: rgb(30, 172, 199);
+            background: $primaryColor;
             position: absolute; 
             left: -6px;
             top: 6px;
         }
     } 
+}
+.car {
+    min-height: 896px;
+    background: url('../img/bg/car_bg.jpg') center center/cover no-repeat;
+    text-align: center;
+    padding: 57px 0 140px;
+    &_label {
+        @include label(#000, #fff);
+    }
+    &_title {
+        @include title(#fff);
+    }
+    &_subtitle{
+        @include subtitle(#fff);
+    }
+    &_text {
+        color: #202020;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+    }
+}
+.conditions {
+    min-height: 920px;
+    text-align: center;
+    padding: 70px 0 80px;
+    &_label {
+        @include label(#fff, #000);
+    }
+    &_title {
+        @include title(#000);
+        margin-bottom: 35px;
+    }
+    &_subtitle{
+        @include subtitle(#000);
+    }
+    &_item {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+    &_heading-blue, 
+    &_heading-red {
+        font-size: 22px;
+    }
+    &_heading-blue {
+        color: $primaryColor;
+    }
+    &_heading-red {
+        color: $secondaryColor;
+    }
+    // ul {
+    //     list-style: none;     
+    // }
+    &_list-red {
+        list-style-image: url('../img/icons/tick-red.svg');
+    }
+    &_list-blue {
+        display: block;
+        list-style-image: url('../img/icons/tick-blue.svg');
+    }
+    &_tip {
+        color: #202020;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    &_text {
+        color: $primaryColor;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+    }
 }
