@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="header-menu">
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
@@ -191,7 +191,7 @@
             <div class="mobileApp_subtitle">
                 Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
             </div>
-            <div class="row">
+            <div class="row sibling-fade">
                 <div class="col-md-4">
                     <div class="mobileApp_item mobileApp_item_1">
                         <div class="mobileApp_item_subtitle">оформление заказа одним касанием</div>
@@ -245,18 +245,19 @@
     </section>
     <section class="car">
         <div class="container">
+            <div class="black"></div>
             <div class="car_label">возможности</div>
-            <div class="car_title">
+            <h2 class="car_title">
                 Выбор - отличная штука!
-            </div>
+            </h2>
             <div class="car_subtitle">
                 Закажите автомобиль, который подходит вам по стилю и бюджету
             </div>
-        </div>
-        <img src="img/car.png" alt="car">
-        <div class="car_text">
-            Машины на каждый день. <br>
-            Лучше, быстрее и дешевле, чем такси
+            <img class="car_img" src="img/car.png" alt="car">
+            <div class="car_text">
+                Машины на каждый день. <br>
+                Лучше, быстрее и дешевле, чем такси
+            </div>
         </div>
     </section>
     <section class="conditions">
@@ -266,7 +267,7 @@
                 условия и требования
             </div>
             <div class="row">
-                <div class="col-md-6 conditions_item">
+                <div class="col-md-5 offset-md-1 conditions_item">
                     <h3 class="conditions_heading-blue">УСЛОВИЯ: со своим авто:</h3>
                     <ul class="conditions_list-blue">
                         <li class="conditions_tip">Подключаем к системе UBER  под 10%.</li>
@@ -279,15 +280,16 @@
                     </ul>
                     <div class="conditions_text">В день заработок составляет 7000-12000р + бонус 3000т рублей</div>
                 </div>
-                <div class="col-md-6 conditions_item">
+                <div class="col-md-5 offset-md-1 conditions_item">
                     <h3 class="conditions_heading-blue">УСЛОВИЯ: на авто компании:</h3>
                     <ul class="conditions_list-blue">
+                        
                         <li class="conditions_tip">Предоставляем авто без залога</li>
                         <li class="conditions_tip">Без ежедневных выплат по аренде</li>
                         <li class="conditions_tip">Среда пятница и суббота работа на компанию остальные дни вы работаете на себя</li>
                     </ul>
                 </div>
-                <div class="col-md-6 conditions_item">
+                <div class="col-md-5 offset-md-1 conditions_item">
                     <h3 class="conditions_heading conditions_heading-red">ТРЕБОВАНИЕ:</h3>
                     <ul class="conditions_list-red">
                         <li class="conditions_tip">Наличие автомобиля без рекламы</li>
@@ -297,7 +299,7 @@
                         <li class="conditions_tip">Дивайс на системе андроид 4.0и выше(самсунг)</li>
                     </ul>
                 </div>
-                <div class="col-md-6 conditions_item">
+                <div class="col-md-5 offset-md-1 conditions_item">
                     <h3 class="conditions_heading conditions_heading-red">ДОКУМЕНТЫ:</h3>
                     <ul class="conditions_list-red">
                         <li class="conditions_tip">Права 2 стороны</li>
@@ -311,6 +313,120 @@
             </div>
         </div>
     </section>
+    <section class="world">
+        <div class="container">
+            <div class="world_wrapper">
+                <div class="world_header">
+                    <div class="world_label">города</div>
+                    <div class="world_title">
+                        По всему миру
+                    </div>
+                    <div class="world_subtitle">
+                        Мы в вашем городе и по всему миру
+                    </div>
+                </div>
+                <div class="world_footer">
+                    <a href="#" class="world_link">посмотреть все города</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <div class="footer_item">
+                <div class="footer_socials">
+                    <div class="footer_round">
+                        <a href="#" class="footer_social-link">
+                            <svg enable-background="new 0 0 512 512"    id="Layer_1" 
+                                version="1.1" viewBox="0 0 512 512" 
+                                fill="#fff"
+                                xml:space="preserve"
+                                width="18px" 
+                                height="18px" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g>
+                                    <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer_round">
+                        <a href="#" class="footer_social-link">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  
+                                fill="#fff"
+                                viewBox="0 0 30 30" 
+                                width="18px" 
+                                height="18px">    
+                                    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer_round">
+                        <a href="#" class="footer_social-link">
+                            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg"  
+                                viewBox="0 0 50 50" 
+                                width="18px"
+                                height="18px">    
+                                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer_round">
+                        <a href="#" class="footer_social-link">
+                            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg"  
+                                viewBox="0 0 48 48" width="18px" height="18px">
+                                    <path d="M 13.5 6 C 9.3754991 6 6 9.3754991 6 13.5 L 6 34.5 C 6 38.624501 9.3754991 42 13.5 42 L 34.5 42 C 38.624501 42 42 38.624501 42 34.5 L 42 13.5 C 42 9.3754991 38.624501 6 34.5 6 L 13.5 6 z M 13.5 9 L 34.5 9 C 37.003499 9 39 10.996501 39 13.5 L 39 18 L 30.599609 18 C 28.950631 16.186543 26.631199 15 24 15 C 21.368801 15 19.049369 16.186543 17.400391 18 L 9 18 L 9 13.5 C 9 10.996501 10.996501 9 13.5 9 z M 31.5 12 A 1.50015 1.50015 0 1 0 31.5 15 L 34.5 15 A 1.50015 1.50015 0 1 0 34.5 12 L 31.5 12 z M 24 18 C 27.331479 18 30 20.668523 30 24 C 30 27.331477 27.331479 30 24 30 C 20.668521 30 18 27.331477 18 24 C 18 20.668523 20.668521 18 24 18 z M 9 21 L 15.607422 21 C 15.265966 21.948081 15 22.937567 15 24 C 15 28.952794 19.047202 33 24 33 C 28.952798 33 33 28.952794 33 24 C 33 22.937567 32.734034 21.948081 32.392578 21 L 39 21 L 39 34.5 C 39 37.003499 37.003499 39 34.5 39 L 13.5 39 C 10.996501 39 9 37.003499 9 34.5 L 9 21 z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_item">
+                <nav class="footer_menu">
+                    <ul class="footer_menu-top">
+                        <li>
+                            <a href="#" class="footer_link">
+                                на главную
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">
+                                города
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">
+                                для водителей
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu-bottom">
+                        <li><a href="#" class="footer_link">центр поддержки</a></li>
+                        <li><a href="#" class="footer_link">вакансии</a></li>
+                        <li><a href="#" class="footer_link">разработчики</a></li>
+                        <li><a href="#" class="footer_link">блог</a></li>
+                        <li><a href="#" class="footer_link">о нас</a></li>
+                    </ul>
+                    <a href="#" class="footer_menu-lang footer_link">Русский</a>
+                </nav>
+                
+            </div>
+            <div class="footer_item">
+                <div class="footer_mobile">
+                    <a href="#">
+                        <img src="img/icons/app-store.png" alt="available-on-app-store">
+                    </a>
+                    <a href="#">
+                        <img src="img/icons/google-play.png" alt="get-it-on-google">
+                    </a>
+                    <a href="#">
+                        <img src="img/icons/windows-store.png" alt="windows-store">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 

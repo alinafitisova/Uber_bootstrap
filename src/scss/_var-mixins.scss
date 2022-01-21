@@ -30,3 +30,10 @@ $secondaryColor: rgb(255, 86, 86);
     text-transform: uppercase;
     text-align: center;
 }
+
+@mixin btn_hover {
+    &:hover {
+        background-image: none;
+        background-color: $primaryColor;
+    }
+}
